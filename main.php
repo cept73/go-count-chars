@@ -15,6 +15,7 @@ while ($buffer = fgets($fp, 4096)) {
     }
 }
 fclose($fp);
+ksort($result);
 
 $duration = microtime(true) - $start;
 
